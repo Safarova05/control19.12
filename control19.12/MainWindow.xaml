@@ -1,0 +1,43 @@
+﻿<Window x:Class="control19._12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:control19._12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="850" Width="980" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+       
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="2" x:Name="frameClick" Background="#D7D6D6"/>
+            <TextBlock Text="Автосалон" Foreground="Black" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Grid.Row="0" Grid.Column="1" />
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" >
+                <TextBlock Width="350" Height="50" Margin="15" Background="#D7D6D6" />
+                <Button Foreground="White" Background="#D1462F" Content="Поиск" Height="50" Width="150" FontSize="20" />
+                <Button Foreground="White" Background="#D1462F" Content="Добавить" Height="50" Width="150" FontSize="20" Margin="10" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="1">
+                <Image Height="100" Width="250" Source="/логотип.jpg" Stretch="Fill" HorizontalAlignment="Left"/>
+            <Button Foreground="White" Background="#D1462F" Content="Покупатели" Height="80" Width="250" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Button_Click"/>
+            <Button Foreground="White" Background="#D1462F" Content="Марки" Height="100" Width="250" FontSize="25" HorizontalAlignment="Left" Click="Button_Click_1"/>
+            <Button Foreground="White" Background="#D1462F" Content="Сотрудники" Height="100" Width="250" FontSize="25" HorizontalAlignment="Left" Click="Button_Click_2"/>
+            <Button Foreground="White" Background="#D1462F" Content="Автомобили" Height="100" Width="250" FontSize="25" HorizontalAlignment="Left" Click="Button_Click_3"/>
+            <Button Foreground="White" Background="#D1462F" Content="Продажи" Height="100" Width="250" FontSize="25" HorizontalAlignment="Left" Click="Button_Click_4"/>
+        </StackPanel>
+
+        
+    </Grid>
+</Window>

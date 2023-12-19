@@ -1,0 +1,51 @@
+﻿<Page x:Class="control19._12.Buyer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:control19._12"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="#EADEDA"
+      Title="Buyer">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Редактирование покупателя" FontSize="20" /> 
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0">
+                <TextBlock Text="Фамилия" FontSize="18" />
+                <TextBlock Text="Имя" FontSize="18" />
+                <TextBlock Text="Отчество" FontSize="18" />
+                <TextBlock Text="Паспорт" FontSize="18" />
+                <TextBlock Text="Адрес" FontSize="18" />
+                <TextBlock Text="Город" FontSize="18" />
+                <TextBlock Text="День рождения" FontSize="18" />
+                <TextBlock Text="Пол" FontSize="18" />
+                <Button Height="50" Width="170" HorizontalAlignment="Left" Margin="10" Content="Отмена" FontSize="18" Background="#D1462F" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="1">
+                <TextBox Height="25" Background="White"/>
+                <TextBox Height="25" Background="White"/>
+                <TextBox Height="25" Background="White"/>
+                <TextBox Height="25" Background="White"/>
+                <TextBox Height="25" Background="White"/>
+                <TextBox Height="25" Background="White"/>
+                <DatePicker Height="30" Width="auto" Background="White"/>
+                <ComboBox  Height="30" Width="auto" Background="White">
+                    <ComboBoxItem Content="М"/>
+                    <ComboBoxItem Content="Ж"/>
+                </ComboBox>
+                <Button Height="50" Width="390" HorizontalAlignment="Left" Content="Сохранить" FontSize="18" Background="#D1462F"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
